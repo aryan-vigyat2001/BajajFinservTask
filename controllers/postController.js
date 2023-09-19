@@ -22,7 +22,7 @@ exports.postController=async(req,res)=>{
             if (!isNaN(item)) {
                 // Check if the item is a number
                 const number = parseFloat(item);
-                response.numbers.push(item);
+                response.numbers.push(number);
             }
             else  if (typeof item === "string" && item.length === 1)
             {
