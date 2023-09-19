@@ -10,6 +10,7 @@ exports.postController=async(req,res)=>{
     };
     try
     {
+        
         const {data}=req.body;
         let highestAlphabet = "";
         if(data.length==0)
