@@ -6,6 +6,9 @@ const app = express()
 dotenv.config()
 app.use(express.json());
 app.use('/bfhl', getRoute);
+app.get("/",(req,res)=>{
+    res.send("welcome")
+})
 
 
 app.listen(process.env.PORT, () => {
